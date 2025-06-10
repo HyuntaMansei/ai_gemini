@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ai-gemini",             # pip에 등록할 이름
+    name="mygemini",             # pip에 등록할 이름
     version="0.1.0",                  # 패키지 버전
     description="A simple config file reader for credentials/config.ini",
     author="sniper0673",

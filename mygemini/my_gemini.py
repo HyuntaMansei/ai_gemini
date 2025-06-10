@@ -4,9 +4,9 @@
 Gemini API에게 전달하여 정리된 답변을 생성합니다.
 '''
 import google.generativeai as genai
-from config_reader import ConfigReader
+from configreader import ConfigReader
 
-class _Mygemini:
+class _MyGemini:
     def __init__(self, api_key=None, model_name=None):
         self.api_key = api_key
         self.model_name = model_name
@@ -15,7 +15,7 @@ class _Mygemini:
         genai.configure(api_key=self.api_key)
         
         
-class MyGemini(_Mygemini):
+class MyGemini(_MyGemini):
     def __init__(self, api_key=None, model_name=None):
         super().__init__(api_key=api_key, model_name=model_name)
         
